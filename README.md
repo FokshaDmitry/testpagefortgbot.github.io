@@ -96,7 +96,7 @@
    let usercard = document.getElementById("usercard"); //получаем блок usercard
     var datag;
 tg.initData = (data) => {
-  const parsedData = JSON.parse(data.startattach);
+  const parsedData = JSON.parse(data.data);
   datag = parsedData // { field1: "content3", field2: 10 }
   // Используйте полученные данные в вашем веб-приложении
 };
