@@ -94,10 +94,16 @@
 
 
    let usercard = document.getElementById("usercard"); //получаем блок usercard
-
+    var datag;
+tg.initData = (data) => {
+  const parsedData = JSON.parse(data.startattach);
+  datag = parsedData // { field1: "content3", field2: 10 }
+  // Используйте полученные данные в вашем веб-приложении
+};
    let profName = document.createElement('p'); //создаем параграф
    profName.innerText = `${tg.initDataUnsafe.user.first_name}
    ${tg.initDataUnsafe.user.last_name}
+   ${data}
    ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
    //выдем имя, "фамилию", через тире username и код языка
    usercard.appendChild(profName); //добавляем
