@@ -94,10 +94,10 @@
 
 
    let usercard = document.getElementById("usercard"); //получаем блок usercard
-    var datag;
+    var datag = "Blsbls";
 tg.initData = (data) => {
   const parsedData = JSON.parse(data.data);
-  datag = data.data // { field1: "content3", field2: 10 }
+  //datag = data.data // { field1: "content3", field2: 10 }
   // Используйте полученные данные в вашем веб-приложении
 };
    let profName = document.createElement('p'); //создаем параграф
