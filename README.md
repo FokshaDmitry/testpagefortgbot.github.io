@@ -103,6 +103,7 @@ tg.initData = (data) => {
    profName.innerText = `${tg.initDataUnsafe.user.first_name}
    ${tg.initDataUnsafe.user.last_name}
    ${datag}
+   ${tg.initData}
    ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
    //выдем имя, "фамилию", через тире username и код языка
    usercard.appendChild(profName); //добавляем
