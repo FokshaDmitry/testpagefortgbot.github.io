@@ -87,7 +87,38 @@
    });
 
    Telegram.WebApp.onEvent('mainButtonClicked', function(){
-      tg.sendData("some string that we need to send");
+      tg.sendData("[
+    {
+        "Country": "Name",
+        "Tariffs": [
+          {
+            "Name": "Random",
+            "Quantity": 2,
+            "Price": 40
+          },
+          {
+            "Name": "Fixed",
+            "Quantity": 2,
+            "Price": 40
+          }
+        ]
+    },
+    {
+        "Country": "Name",
+        "Tariffs": [
+          {
+            "Name": "Random",
+            "Quantity": 2,
+            "Price": 40
+          },
+          {
+            "Name": "Fixed",
+            "Quantity": 2,
+            "Price": 40
+          }
+        ]
+    }
+]");
       //при клике на основную кнопку отправляем данные в строковом виде
    });
 
