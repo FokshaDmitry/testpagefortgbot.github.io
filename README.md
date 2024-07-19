@@ -46,7 +46,7 @@
     <div id="usercard">
         <!--Карта профиля, человека, который к нам обратился-->
     </div>
-    <p>Just texxt</p> <!--Просто текст для проверки-->
+    <p>Just texxXXt</p> <!--Просто текст для проверки-->
     <p class="hint">Some little hint</p> <!--Просто текст-подсказка для проверки-->
     <button id="btn" class="button">Show/Hide Main Button</button> <!--Кнопка, чтобы скрыть / показать основную кнопку-->
     <button id="btnED" class="button">Enable/Disable Main Button</button> <!--Кнопка, чтобы сделать кнопку активной/неактивной-->
