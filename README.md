@@ -28,7 +28,7 @@
    tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
    tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
    tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
-    tg.sendData("some string that we need to send");
+    tg.sendData('[{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]},{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]}]');
    let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать
 
    btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
