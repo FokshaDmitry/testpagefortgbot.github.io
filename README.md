@@ -46,7 +46,7 @@
     <div id="usercard">
         <!--Карта профиля, человека, который к нам обратился-->
     </div>
-    <p>Just texxXXt</p> <!--Просто текст для проверки-->
+    <p>Just texxXt</p> <!--Просто текст для проверки-->
     <p class="hint">Some little hint</p> <!--Просто текст-подсказка для проверки-->
     <button id="btn" class="button">Show/Hide Main Button</button> <!--Кнопка, чтобы скрыть / показать основную кнопку-->
     <button id="btnED" class="button">Enable/Disable Main Button</button> <!--Кнопка, чтобы сделать кнопку активной/неактивной-->
@@ -87,38 +87,7 @@
    });
 
    Telegram.WebApp.onEvent('mainButtonClicked', function(){
-      tg.sendData("[
-    {
-        "Country": "Name",
-        "Tariffs": [
-          {
-            "Name": "Random",
-            "Quantity": 2,
-            "Price": 40
-          },
-          {
-            "Name": "Fixed",
-            "Quantity": 2,
-            "Price": 40
-          }
-        ]
-    },
-    {
-        "Country": "Name",
-        "Tariffs": [
-          {
-            "Name": "Random",
-            "Quantity": 2,
-            "Price": 40
-          },
-          {
-            "Name": "Fixed",
-            "Quantity": 2,
-            "Price": 40
-          }
-        ]
-    }
-]");
+      tg.sendData('[{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]},{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]}]');
       //при клике на основную кнопку отправляем данные в строковом виде
    });
 
