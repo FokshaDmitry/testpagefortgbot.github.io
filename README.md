@@ -6,47 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Telegram WebApps API</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script> <!--Подключаем скрипт от телеграм-->
-
-    <style>
-        body {
-            color: var(--tg-theme-text-color);
-            background: var(--tg-theme-bg-color);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 18px;
-        }
-
-        .hint {
-            color: var(--tg-theme-hint-color);
-        }
-
-        .link {
-            color: var(--tg-theme-link-color);
-        }
-
-        .button {
-            background: var(--tg-theme-button-color);
-            color: var(--tg-theme-button-text-color);
-            border: none;
-            font-size: 18px;
-        }
-
-            .button:not(:last-child) {
-                margin-bottom: 20px
-            }
-
-        #usercard {
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
     <div id="usercard">
         <!--Карта профиля, человека, который к нам обратился-->
     </div>
-    <p>Just texxXt</p> <!--Просто текст для проверки-->
+    <p>Just texxXXXt</p> <!--Просто текст для проверки-->
     <p class="hint">Some little hint</p> <!--Просто текст-подсказка для проверки-->
     <button id="btn" class="button">Show/Hide Main Button</button> <!--Кнопка, чтобы скрыть / показать основную кнопку-->
     <button id="btnED" class="button">Enable/Disable Main Button</button> <!--Кнопка, чтобы сделать кнопку активной/неактивной-->
@@ -100,13 +66,7 @@ tg.initData = (data) => {
   // Используйте полученные данные в вашем веб-приложении
 };
    let profName = document.createElement('p'); //создаем параграф
-   profName.innerText = `${tg.initDataUnsafe.user.first_name}
-   ${tg.initDataUnsafe.user.last_name}
-   ${datag}
-   ${tg.initData}
-   ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
    //выдем имя, "фамилию", через тире username и код языка
-   usercard.appendChild(profName); //добавляем
 
    let userid = document.createElement('p'); //создаем еще параграф
    userid.innerText = `${datag}`; //показываем user_id
