@@ -29,48 +29,48 @@
    //tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
    //tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
     tg.sendData('[{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]},{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]}]');
-   let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать
+   //let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать
 
-   btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-      if (tg.MainButton.isVisible){ //если кнопка показана
-         tg.MainButton.hide() //скрываем кнопку
-      }
-      else{ //иначе
-         tg.MainButton.show() //показываем
-      }
-   });
+   ///btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+      //if (tg.MainButton.isVisible){ //если кнопка показана
+    //     tg.MainButton.hide() //скрываем кнопку
+   //   }
+   //   else{ //иначе
+   //      tg.MainButton.show() //показываем
+   //   }
+ //  });
 
-   let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
-   btnED.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-      if (tg.MainButton.isActive){ //если кнопка показана
-         tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
-         tg.MainButton.disable() //скрываем кнопку
-      }
-      else{ //иначе
-         tg.MainButton.setParams({"color": "#143F6B"}); //меняем цвет
-         tg.MainButton.enable() //показываем
-      }
-   });
+  // let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
+  //btnED.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+   //  if (tg.MainButton.isActive){ //если кнопка показана
+ //        tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
+  //       tg.MainButton.disable() //скрываем кнопку
+  //    }
+  //    else{ //иначе
+  //       tg.MainButton.setParams({"color": "#143F6B"}); //меняем цвет
+   //      tg.MainButton.enable() //показываем
+ //     }
+//   });
 
-   Telegram.WebApp.onEvent('mainButtonClicked', function(){
-      tg.sendData('[{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]},{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]}]');
+  // Telegram.WebApp.onEvent('mainButtonClicked', function(){
+//      tg.sendData('[{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]},{"Country": "Name","Tariffs": [{"Name": //"Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]}]');
       //при клике на основную кнопку отправляем данные в строковом виде
-   });
+  // });
 
 
-   let usercard = document.getElementById("usercard"); //получаем блок usercard
-   let datag;
-tg.initData = (data) => {
-  const parsedData = JSON.parse(data.data);
-  datag = data.data // { field1: "content3", field2: 10 }
+  // let usercard = document.getElementById("usercard"); //получаем блок usercard
+  // let datag;
+//tg.initData = (data) => {
+ // const parsedData = JSON.parse(data.data);
+//  datag = data.data // { field1: "content3", field2: 10 }
   // Используйте полученные данные в вашем веб-приложении
-};
-   let profName = document.createElement('p'); //создаем параграф
+//};
+//   let profName = document.createElement('p'); //создаем параграф
    //выдем имя, "фамилию", через тире username и код языка
 
-   let userid = document.createElement('p'); //создаем еще параграф
-   userid.innerText = `${datag}`; //показываем user_id
-   usercard.appendChild(userid); //добавляем
+//   let userid = document.createElement('p'); //создаем еще параграф
+//   userid.innerText = `${datag}`; //показываем user_id
+//   usercard.appendChild(userid); //добавляем
 
 
    //работает только в attachment menu
