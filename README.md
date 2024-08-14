@@ -40,7 +40,7 @@
    //   }
  //  });
 
-  // let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
+  let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
   btnED.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
    //  if (tg.MainButton.isActive){ //если кнопка показана
  //        tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
