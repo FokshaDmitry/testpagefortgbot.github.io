@@ -23,11 +23,11 @@
 
    tg.expand(); //расширяем на все окно
 
-   tg.MainButton.text = "Changed Text"; //изменяем текст кнопки
-   tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
-   tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
-   tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
-   tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
+   //tg.MainButton.text = "Changed Text"; //изменяем текст кнопки
+   //tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
+   //tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
+   //tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
+   //tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
     tg.sendData('[{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]},{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]}]');
    let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать
 
