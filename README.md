@@ -21,7 +21,7 @@
 <script>
    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
 
-   tg.expand(); //расширяем на все окно
+    //расширяем на все окно
 
    //tg.MainButton.text = "Changed Text"; //изменяем текст кнопки
    //tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
@@ -45,6 +45,7 @@
    //  if (tg.MainButton.isActive){ //если кнопка показана
  //        tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
   //       tg.MainButton.disable() //скрываем кнопку
+      tg.expand();
       tg.sendData('[{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]},{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]}]');
      });
   //    else{ //иначе
