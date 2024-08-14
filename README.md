@@ -46,7 +46,7 @@
  //        tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
   //       tg.MainButton.disable() //скрываем кнопку
       tg.sendData('[{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]},{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]}]');
-     }
+     });
   //    else{ //иначе
   //       tg.MainButton.setParams({"color": "#143F6B"}); //меняем цвет
    //      tg.MainButton.enable() //показываем
