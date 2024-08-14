@@ -46,7 +46,7 @@
  //        tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
   //       tg.MainButton.disable() //скрываем кнопку
       tg.expand();
-      tg.sendData('[{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]},{"Country": "Name","Tariffs": [{"Name": "Random","Quantity": 2,"Price": 40},{"Name": "Fixed","Quantity": 2,"Price": 40}]}]');
+      tg.sendData('[{"Country":"kuwait","Tariffs":[{"Name":"random","Quantity":3,"Price":60}]},{"Country":"germany","Tariffs":[{"Name":"random","Quantity":3,"Price":60}]},{"Country":"germany","Tariffs":[{"Name":"fixed","Quantity":2,"Price":140}]},{"Country":"uae","Tariffs":[{"Name":"random","Quantity":3,"Price":60}]},{"Country":"austria","Tariffs":[{"Name":"random","Quantity":2,"Price":60}]},{"Country":"switzerland","Tariffs":[{"Name":"random","Quantity":2,"Price":60}]},{"Country":"switzerland","Tariffs":[{"Name":"fixed","Quantity":3,"Price":140}]},{"Country":"saudi","Tariffs":[{"Name":"random","Quantity":3,"Price":60}]},{"Country":"spain","Tariffs":[{"Name":"random","Quantity":5,"Price":60}]}]');
      });
   //    else{ //иначе
   //       tg.MainButton.setParams({"color": "#143F6B"}); //меняем цвет
